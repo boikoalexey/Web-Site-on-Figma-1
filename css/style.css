@@ -29,29 +29,23 @@
 
 body {
     font-family: 'Gilroy';
-    background-color: #fff;
+	font-size: 18px;
+	line-height: 20px;
 }
 
-.page {
-	width: 100%;
-	max-width: 1300px;
-
-}
-
-.content {
-	width: 100%;
-
-	margin: 0 auto;
-}
 
 /* Header */
 
-.nav {
+.content-header {
+	width: 100%;
+	max-width: 945px;
+	margin: 0 auto;
 
+	background-color: #fff;
 }
 
 .nav-item {
-	margin-bottom: 16px;
+	margin-bottom: 5px;
 	padding: 32px 0;
 	display: flex;
 	justify-content: space-between;
@@ -65,6 +59,12 @@ body {
 
 	text-decoration: none;
 	color: #828282;
+
+	transition: color .2s linear;
+}
+
+.nav-link:hover {
+	color: rgb(0, 0, 0);
 }
 
 .border {
@@ -73,7 +73,7 @@ body {
 }
 
 .header-title {
-	margin-bottom: 16px;
+	margin-bottom: 30px;
 	padding: 0 0;
 
 	display: flex;
@@ -114,4 +114,113 @@ body {
 
 .checkbox span {
 	font-weight: 700;
+}
+
+.img-header {
+	margin-bottom: 100px;
+}
+
+/* Content-midlle */
+
+.content-midlle {
+
+	background-color: #F6F6F6;
+}
+
+.text-midlle {
+	padding: 100px 0;
+	text-align: center;
+}
+
+.title-midlle {
+	margin-bottom: 30px;
+}
+
+.article-midlle {
+	margin-bottom: 35px;
+}
+
+/* Content-skills */
+
+.title-skills {
+	margin-bottom: 50px;
+}
+
+.article-skills {
+	margin-bottom: 80px;
+}
+
+.skills-img {
+	padding: 0 40px;
+}
+
+/* Content-img */
+
+.content-img {
+	padding-top: 100px;
+	padding-bottom: 1px;
+	text-align: center;
+	background-color: #F6F6F6;
+}
+
+.title-img {
+	margin-bottom: 50px;
+}
+
+.link-img {
+	margin-top: 40px;
+	margin-bottom: 100px;
+	font-size: 18px;
+	font-weight: 500;
+
+	color: #070707;
+
+	display: block;
+}
+
+/* Contacts */
+
+.contacts {
+	padding-top: 100px;
+	padding-bottom: 1px;
+	text-align: center;
+}
+
+.btn-block {
+	margin-bottom: 80px;
+}
+
+.btn {
+	display: inline-block;
+    padding: 11px 35px;
+
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500px;
+    font-family: inherit;
+
+    background-color: #070707;;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 0;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s linear;
+}
+
+.btn:hover {
+	background-color: #828282;
+}
+
+.img-footer {
+	margin-bottom: 50px;
+}
+
+.footer {
+	margin-bottom: 100px;
+
+	text-align: center;
+	font-size: 14px;
+	color: #828282;
 }
