@@ -8,32 +8,43 @@
     <title>Home</title>
 </head>
 <body>
-    <div class="content-header">
-        <header class="header">
-            <nav class="nav">
-                <ui class="nav-item">
-                    <li><a class="nav-link" href="">Home</a></li>
-                    <li><a class="nav-link" href="">About me</a></li>
-                    <li><a class="nav-link" href="">Skills</a></li>
-                    <li><a class="nav-link" href="">Portfolio</a></li>
-                    <li><a class="nav-link" href="">Contacts</a></li>
-                </ui>
+
+<div class="page">
+    <header class="header">
+        <div class="container">
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#">Home</a>
+                <a class="nav__link" href="#">About me</a>
+                <a class="nav__link" href="#">Skills</a>
+                <a class="nav__link" href="#">Portfolio</a>
+                <a class="nav__link" href="#">Contacts</a>
             </nav>
-            <div class="border"></div>
-        </header>
-
-        <div class="header-title">
-            <div class="name">Denis <br>Novik<br></div>
-            <div class="age">UX | UI designer
-                <br>24 years old, Minsk<br></div>
-            <div class="checkbox">RU <span>| ENG</span></div>
         </div>
+    </header>
 
-        <img class="img-header " src="img/BSPP2266.jpg" alt="">
-    </div>
+    <section class="section">
+        <div class="container">
+            <div class="intro">
 
-    <div class="content-midlle">
-        <div class="text-midlle">
+                <div class="intro__name">Denis <br>Novik<br></div>
+                <div class="intro__age">UX | UI designer
+                    <br>24 years old, Minsk<br></div>
+                <div class="intro__checkbox">RU <span>| ENG</span></div>
+
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__line">1</span>
+                    <span class="burger__line">2</span>
+                    <span class="burger__line">3</span>
+                    <span class="burger__line">4</span>
+                </button>
+            </div>
+            <img class="img img--full" src="img/BSPP2266.jpg" alt="">
+            <img class="img img--mobil" src="img/man-mobil.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="section section--gray">
+        <div class="container">
             <h1 class="title-midlle">About me</h1>
             <p class="article-midlle">Hi, I'm Denis – UX/UI designer from Minsk.
             <br>I'm interested in design and everything connected with it.</br></p>
@@ -44,54 +55,59 @@
             <p>Ready to implement excellent projects
             <br>with wonderful people.</br></p>
         </div>
-    </div>
+    </section>
 
-    <div class="content-skills">
-        <div class="text-midlle">
+    <section class="section">
+        <div class="container">
             <h1 class="title-skills">Skills</h1>
             <p class="article-skills">I work in such programs as</p>
             <div class="skills-icons">
-                <img class="skills-img" src="img/Ps.png" alt="">
-                <img class="skills-img" src="img/Ai.png" alt="">
-                <img class="skills-img" src="img/Ae.png" alt="">
-                <img class="skills-img" src="img/Figma.png" alt="">
+                <img class="img skills-img" src="img/Ps.png" alt="">
+                <img class="img skills-img" src="img/Ai.png" alt="">
+                <img class="img skills-img" src="img/Ae.png" alt="">
+                <img class="img skills-img" src="img/Figma.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--gray">
+        <div class="container">
+            <h1 class="title-img">Portfolio</h1>
+
+            <img class="img" src="img/Слой 8.jpg" alt="">
+            <a class="link-img" href="">Online fashion store - Homepage</a>
+
+            <img class="img" src="img/reebok_web.png" alt="">
+            <a class="link-img" href="">Reebok Store - Concept</a>
+
+            <img class="img" src="img/braun_web.png" alt="">
+            <a class="link-img" href="">Braun Landing Page - Concept</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title-midlle">Contacts</h1>
+            <p class="article-midlle">Want to know more or just chat?<br>You are welcome!</br></p>
+
+            <div class="btn-block">
+                <button class="btn">Send message</button>
             </div>
 
+            <div class="img-footer">
+                <img class="img" src="img/Group 12.png" alt="">
         </div>
-    </div>
-
-    <div class="content-img">
-        <h1 class="title-img">Portfolio</h1>
-
-        <img src="img/Слой 8.jpg" alt="">
-        <a class="link-img" href="">Online fashion store - Homepage</a>
-
-        <img src="img/reebok_web.png" alt="">
-        <a class="link-img" href="">Reebok Store - Concept</a>
-
-        <img src="img/braun_web.png" alt="">
-        <a class="link-img" href="">Braun Landing Page - Concept</a>
-    </div>
-
-    <div class="contacts">
-        <h1 class="title-midlle">Contacts</h1>
-        <p class="article-midlle">Want to know more or just chat?<br>You are welcome!</br></p>
-
-        <div class="btn-block">
-            <button class="btn">Send message</button>
-        </div>
-
-        <div class="img-footer">
-            <img src="img/Group 12.png" alt="">
-        </div>
-    </div>
+    </section>
 
     <footer class="footer">
-        <p>Like me on
-        <br> LinkedIn, Instagram, Behance, Dribble </br></p>
+        <div class="container">
+            <p>Like me on
+            <br> LinkedIn, Instagram, Behance, Dribble </br></p>
+        </div>
     </footer>
+</div>
 
-
-
+<script src="/js/jquery-3.6.0.min.js"></script>
+<script src="/js/app.js"></script>
 </body>
 </html>
