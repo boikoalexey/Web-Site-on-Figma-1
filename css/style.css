@@ -30,6 +30,11 @@ body {
 	line-height: 20px;
 }
 
+body.no-scroll,
+body.show-nav {
+    overflow: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
@@ -75,6 +80,10 @@ ul, ol {
     transition: background-color .2s linear;
 }
 
+.header--dark {
+    background-color:rgba(255, 255, 255, .9);
+}
+
 /* Nav */
 .nav {
 	display: flex;
@@ -96,6 +105,11 @@ ul, ol {
 	color: #828282;
 
 	transition: all .2s linear;
+}
+
+.nav__link.active {
+	color: rgb(0, 0, 0);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.22);
 }
 
 .nav__link:not(.active):hover {
@@ -274,6 +288,10 @@ ul, ol {
 	display: block;
 }
 
+.link-img:last-child {
+	margin-bottom: 0;
+}
+
 /* Contacts */
 .contacts {
 	padding-top: 100px;
@@ -316,17 +334,25 @@ ul, ol {
 	color: #828282;
 }
 
+.img--contacts {
+	margin: 0 auto;
+}
+
 /* Media Queries */
 @media (max-width: 767px) {
 	/* Nav */
 	.nav {
 		flex-direction: column;
 		justify-content: flex-start;
-		width: 100%;
+
+		padding-top: 20px;
+
+		width: 60%;
 		height: 100vh;
 		overflow: auto;
 
-		background-color: rgba(0, 0, 0, .85);
+		background-color: #fff;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.22);
 
 		position: absolute;
 		top: 100%;
@@ -334,7 +360,7 @@ ul, ol {
 		right: 0;
 		z-index: 1;
 
-		transform: translateX(100%);
+		transform: translateX(200%);
 		transition: all .2s linear;
 	}
 
@@ -344,9 +370,12 @@ ul, ol {
 
 	.nav__link {
 		display: block;
-		padding: 10px 15px;
-		text-align: right;
-		color: #fff;
+		padding: 20px 15px;
+		text-align: left;
+
+		font-size: 22px;
+		line-height: 0.5;
+		color: #070707;
 		transition: all .2s linear;
 	}
 
@@ -393,6 +422,13 @@ ul, ol {
 	.img--mobil {
 		display: block;
 	}
+
+	.title-skills {
+		margin-bottom: 20px;
+	}
+
+	.article-skills {
+		margin-bottom: 10px}
 
 }
 
